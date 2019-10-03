@@ -22,8 +22,8 @@ type Penyakit struct {
 
 type Penyebab struct {
 	Id_Penyebab   string `grom:"type:int(300);primary"`
-	Nama_Penyakit string `grom:"type:text"`
-	Desc_Penyakit string `grom:"type:text"`
+	Nama_Penyebab string `grom:"type:text"`
+	Desc_Penyebab string `grom:"type:text"`
 }
 
 type Solusi struct {
