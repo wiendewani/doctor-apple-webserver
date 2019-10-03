@@ -14,20 +14,20 @@ type User struct {
 type Penyakit struct {
 	gorm.Model
 
-	Nama_penyakit string `gorm:"type:varchar(300);index"`
-	Desc_penyakit string `grom:"type:text"`
-	Id_penyebab   string `grom:"type:text"`
-	Id_solusi     string `grom:"type:text"`
+	Nama_Penyakit string `gorm:"type:varchar(300);index"`
+	Desc_Penyakit string `grom:"type:text"`
+	Id_Penyebab   string `grom:"type:text"`
+	Id_Solusi     string `grom:"type:text"`
 }
 
 type Penyebab struct {
-	Id_penyebab   string `grom:"type:int(300);primary"`
-	Nama_penyakit string `grom:"type:text"`
-	Desc_penyakit string `grom:"type:text"`
+	Id_Penyebab   string `grom:"type:int(300);primary"`
+	Nama_Penyakit string `grom:"type:text"`
+	Desc_Penyakit string `grom:"type:text"`
 }
 
 type Solusi struct {
-	Id_solusi   string `grom:"type:int(300);primary"`
-	Nama_solusi string `grom:"type:text"`
-	Desc_solusi string `grom:"type:text"`
+	Id_Solusi   string `grom:"type:int(300);primary"`
+	Nama_Solusi string `grom:"type:text"`
+	Desc_Solusi string `grom:"type:text"`
 }
