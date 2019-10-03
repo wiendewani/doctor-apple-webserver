@@ -1,21 +1,13 @@
 package controllers
 
 import (
+	"../structs"
 	"encoding/hex"
+	"github.com/gin-gonic/gin"
+	"golang.org/x/crypto/bcrypt"
+	"golang.org/x/crypto/sha3"
 	"net/http"
 	"time"
-)
-
-package controllers
-
-import (
-"../structs"
-"encoding/hex"
-"github.com/gin-gonic/gin"
-"golang.org/x/crypto/bcrypt"
-"golang.org/x/crypto/sha3"
-"net/http"
-"time"
 )
 
 func (idb *InDB) GetUser(c *gin.Context) {
