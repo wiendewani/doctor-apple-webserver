@@ -13,6 +13,6 @@ func DBInit() *gorm.DB {
 		panic("Failed to connect to Database")
 	}
 
-	db.AutoMigrate(structs.User{})
+	db.AutoMigrate(structs.Disease{})
 	return db
 }

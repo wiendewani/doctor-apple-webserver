@@ -9,9 +9,10 @@ import (
 func main() {
 	db := config.DBInit()
 	inDB := &controllers.InDB{DB: db}
+
 	router := gin.Default()
+	router.GET("/ph/:id", inDB.GetDisease)
+	router.POST("/ph", inDB.AnalyzeDiease)
 
-	router.GET("/user/:id", inDB.GetUser)
-
-	router.Run(":2000")
+	router.Run(":2221")
 }
